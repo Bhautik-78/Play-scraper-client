@@ -1,0 +1,23 @@
+#descr {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+
+#descr #collapseDescr.collapse:not(.show) {
+    display: block;
+    height: 4rem;
+    overflow: hidden;
+}
+
+#descr #collapseDescr.collapsing {
+    height: 3rem;
+}
+
+#descr a.collapsed::after {
+    content: 'READ MORE';
+}
+
+#descr a:not(.collapsed)::after {
+    content: 'COLLAPSE';
+}

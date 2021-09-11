@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>Play Scraper</title>
+
+    <link href="https://fonts.gstatic.com/" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&amp;display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="./s/ext/bootstrap.min.css">
+    <link rel="stylesheet" href="./s/main2e062.css?v=27">
+
+    <link rel="stylesheet" href="./s/ext/c3.min.css">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="./s/icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./s/icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./s/icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./s/icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./s/icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./s/icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./s/icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./s/icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./s/icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./s/icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./s/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./s/icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./s/icons/favicon-16x16.png">
+    <link rel="manifest" href="https://appstorespy.com/s/icons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="../../../s/icons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <style>
+
+
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+      }
+
+      .spacer {
+        padding-top: 10px;
+        padding-bottom: 10px
+      }
+
+      .navbar {
+        margin-bottom: 10px;
+      }
+
+      .custom-control {
+        padding-left: 3.75rem;
+      }
+
+      .srch {
+        background: #ffffff;
+        background: -webkit-linear-gradient(top, #ffffff, #ffffff);
+        padding: 3px 4px;
+        position: absolute;
+        right: 18px;
+      }
+
+      .btn img {
+        width: 16px;
+        margin: 0 5px 3px 5px;
+      }
+
+      #search {
+        position: relative;
+      }
+
+      .fc {
+        padding-right: 40px;
+        width: 400px !important;
+      }
+
+      .nbt1 {
+        margin-right: 5px;
+      }
+
+      @media (max-width: 1448px) {
+        .fc {
+          padding-right: 40px;
+          width: 300px !important;
+        }
+      }
+
+      footer {
+        margin: 50px 10% 0 10%;
+      }
+
+      @media (max-width: 1300px) {
+        .badge-success {
+          display: none;
+
+        }
+      }
+
+      @media (max-width: 1230px) {
+
+        .nbt1, .nbt2 {
+          padding: 0;
+        }
+      }
+
+      @media (max-width: 992px) {
+        .carsimg {
+          width: 100%;
+        }
+
+        .fc {
+          padding-right: 40px;
+          width: 100% !important
+        }
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+
+    </style>
+
+    <script>
+      let UID = null
+    </script>
+
+    <script type="text/javascript">
+      (function (e, t) {
+        var n = e.amplitude || {_q: [], _iq: {}};
+        var r = t.createElement("script")
+        ;r.type = "text/javascript"
+        ;r.integrity = "sha384-u0hlTAJ1tNefeBKwiBNwB4CkHZ1ck4ajx/pKmwWtc+IufKJiCQZ+WjJIi+7C6Ntm"
+        ;r.crossOrigin = "anonymous";
+        r.async = true
+        ;r.src = "../../../../cdn.amplitude.com/libs/amplitude-8.1.0-min.gz.js"
+        ;r.onload = function () {
+          if (!e.amplitude.runQueuedFunctions) {
+            console.log("[Amplitude] Error: could not load SDK")
+          }
+        }
+        ;var i = t.getElementsByTagName("script")[0];
+        i.parentNode.insertBefore(r, i)
+        ;
+
+        function s(e, t) {
+          e.prototype[t] = function () {
+            this._q.push([t].concat(Array.prototype.slice.call(arguments, 0)));
+            return this
+          }
+        }
+
+        var o = function () {
+                  this._q = [];
+                  return this
+                }
+        ;var a = ["add", "append", "clearAll", "prepend", "set", "setOnce", "unset", "preInsert", "postInsert", "remove"]
+        ;
+        for (var c = 0; c < a.length; c++) {
+          s(o, a[c])
+        }
+        n.Identify = o;
+        var u = function () {
+                  this._q = []
+                  ;
+                  return this
+                }
+        ;var l = ["setProductId", "setQuantity", "setPrice", "setRevenueType", "setEventProperties"]
+        ;
+        for (var p = 0; p < l.length; p++) {
+          s(u, l[p])
+        }
+        n.Revenue = u
+        ;var d = ["init", "logEvent", "logRevenue", "setUserId", "setUserProperties", "setOptOut", "setVersionName", "setDomain", "setDeviceId", "enableTracking", "setGlobalUserProperties", "identify", "clearUserProperties", "setGroup", "logRevenueV2", "regenerateDeviceId", "groupIdentify", "onInit", "logEventWithTimestamp", "logEventWithGroups", "setSessionId", "resetSessionId"]
+        ;
+
+        function v(e) {
+          function t(t) {
+            e[t] = function () {
+              e._q.push([t].concat(Array.prototype.slice.call(arguments, 0)))
+            }
+          }
+
+          for (var n = 0; n < d.length; n++) {
+            t(d[n])
+          }
+        }
+
+        v(n);
+        n.getInstance = function (e) {
+          e = (!e || e.length === 0 ? "$default_instance" : e).toLowerCase()
+          ;
+          if (!Object.prototype.hasOwnProperty.call(n._iq, e)) {
+            n._iq[e] = {_q: []};
+            v(n._iq[e])
+          }
+          return n._iq[e]
+        };
+        e.amplitude = n
+      })(window, document);
+
+      amplitude.getInstance().init("46eda286ab4a9d68bb8eb361a952bcb1", null, {
+        includeUtm: true,
+        includeGclid: true,
+        includeReferrer: true
+      });
+      amplitude.getInstance().identify(new amplitude.Identify().set('plan', 'Guest'));
+    </script>
+
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        'gtm.start':
+                new Date().getTime(), event: 'gtm.js'
+      });
+      var f = d.getElementsByTagName(s)[0],
+              j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src =
+              '../../../../www.googletagmanager.com/gtm5445.html?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-KXMHM3R');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-166YF1Q2CY"></script>
+
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+
+      gtag('js', new Date());
+
+      gtag('config', 'G-166YF1Q2CY');
+
+
+    </script>
+
+    <script
+            src="./browser.sentry-cdn.com/6.4.1/bundle.min.js"
+            integrity="sha384-THoc7rflwZFKTdZNgv6jLFFDn299Uv3t1SW5B4yGLvLiCRTYP9ys6vXZcMl95TQF"
+            crossorigin="anonymous"
+    ></script>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript"> (function (m, e, t, r, i, k, a) {
+      m[i] = m[i] || function () {
+        (m[i].a = m[i].a || []).push(arguments)
+      };
+      m[i].l = 1 * new Date();
+      k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+    })(window, document, "script", "../../../../mc.yandex.ru/metrika/tag.js", "ym");
+    ym(57393463, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true,
+      webvisor: true,
+      ecommerce: "dataLayer"
+    }); </script>
+    <noscript>
+      <div><img src="https://mc.yandex.ru/watch/57393463" style="position:absolute; left:-9999px;" alt=""/></div>
+    </noscript> <!-- /Yandex.Metrika counter -->
+
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <style>
+      .test {
+        width: 100%;
+      }
+
+      .caplist {
+        font-weight: bold;
+        background-color: #ccc;
+      }
+
+      .listf {
+        padding: 0 15px;
+      }
+
+      .himg img {
+        max-height: 250px;
+      }
+
+      .rating {
+        padding: 0 0 0 10px;
+      }
+
+      span.star {
+        background-image: url(./s/play/star.png);
+        height: 14px;
+        display: inline-block;
+        width: 14px;
+        background-size: cover;
+
+        margin: 0 5px 0 0;
+      }
+
+      .imglink {
+        max-width: 100px;
+        padding: 3px;
+      }
+
+      @media (max-width: 767px) {
+        .imglink {
+          max-width: 100%;
+          padding: 5px;
+        }
+      }
+
+      .logo {
+        max-width: 120px;
+        padding-right: 0;
+      }
+
+      nav > .nav.nav-tabs {
+
+        border: none;
+
+
+        border-radius: 0;
+
+      }
+
+      nav > div a.nav-item.nav-link,
+      nav > div a.nav-item.nav-link.active {
+        border: none;
+        padding: 18px 25px;
+
+
+        border-radius: 0;
+      }
+
+      nav > div a.nav-item.nav-link.active:after {
+        content: "";
+        position: relative;
+        bottom: -60px;
+        right: 30%;
+        text-align: center;
+        border: 15px solid transparent;
+        border-top-color: #e74c3c;
+      }
+
+      .tab-content {
+
+        line-height: 25px;
+        border: 1px solid #ddd;
+        border-top: 5px solid #e74c3c;
+
+        padding: 30px 25px;
+        margin: 1px;
+      }
+
+      nav > div a.nav-item.nav-link:hover,
+      nav > div a.nav-item.nav-link:focus {
+
+
+      }
+
+      @media (max-width: 576px) {
+        div.logo {
+          max-width: 100px;
+        }
+
+        h1 {
+          font-size: 22px;
+          font-weight: 300;
+          line-height: 24px;
+        }
+
+        h2 {
+          font-size: 1rem;
+          font-weight: lighter;
+          line-height: 18px;
+        }
+      }
+    </style>
+
+
+    <script>
+      let zooming = null;
+      var charts2 = [];
+      let charts_zoom = ['chart_installs', 'chart_ratings', 'chart_rates']
+    </script>
+
+
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>
